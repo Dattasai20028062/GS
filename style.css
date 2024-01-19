@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-image: url("images/background.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat:repeat;
+
+
+}
+.containter{
+    align-items: center;
+    align-content: center;
+}
+.card{
+    padding: 5rem ;
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0,0,0,0.5);
+}
+#cb1{
+    background-color: rgba(255,255,255,0.05);
+    width: 90%;
+    max-width: 500px;
+    margin-top: 100px;
+    color: white;
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+    align-items:center;
+    transition: 0.5s ease-in-out;
+}
+#card-im{
+    width: 100px;
+    height: 100px;
+    
+
+}
+#bt{
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+#loading{
+    visibility: hidden;
+}
+.do span{
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    transform: rotate(calc(var(--i)*(360deg/12))) translateY(35px);
+    z-index: 1;
+    animation: animate 1.5s infinite  calc(var(--i) * 0.1s);
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+    
+}
