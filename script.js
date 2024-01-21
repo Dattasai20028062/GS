@@ -14,7 +14,7 @@ function fun(){
     .then((result) => {
         if (result.status == 404){
             console.log("NO USER FOUND");
-            img.src = "images/nogit.png"
+            img.src = "./images/nogit.png"
             img.style.visibility = "visible";
             nouser.style.visibility="visible";
             nouser.innerHTML="NO USER FOUND";
